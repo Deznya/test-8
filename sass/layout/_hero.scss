@@ -1,0 +1,154 @@
+// .hero-title {
+//   font-weight: 900;
+//   font-size: 44px;
+//   line-height: 1.3;
+//   color: var(--main-light-color);
+//   /* Текс большими буквами */
+//   text-transform: uppercase;
+//   letter-spacing: 0.06em;
+//   width: 696px;
+//   margin: 0 auto;
+//   margin-bottom: 30px;
+// }
+
+// .hero-section {
+//   padding-top: 200px;
+//   padding-bottom: 200px;
+//   text-align: center;
+//   background-repeat: no-repeat;
+//   max-width: 1600px;
+//   height: 600px;
+//   background-size: cover;
+//   margin: 0 auto;
+//   background: var(--hero-section);
+//   background-image: linear-gradient(
+//       var(--background-image-hero-04),
+//       var(--background-image-hero-04)
+//     ),
+//     url(../images/hero-section.jpg);
+// }
+
+// .hero-button {
+//   font-family: 'Roboto', sans-serif;
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.8;
+//   letter-spacing: 0.06em;
+//   cursor: pointer;
+//   background-color: var(--current-color);
+//   color: var(--main-light-color);
+//   border-radius: 4px;
+//   box-shadow: 0px 4px 4px var(--hero-shadow-button-color);
+//   padding: 10px 32px;
+//   border: none;
+//   transition: var(--transition-dur-and-func);
+
+//   &:hover,
+//   &:focus {
+//     background-color: var(--button-hero-bg-color);
+//     box-shadow: 0px 4px 4px var(--hero-shadow-button-color);
+//     border-radius: 4px;
+//   }
+// }
+
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(55, 47, 58, 0.4) 0%, rgba(55, 47, 58, 0)),
+    url(../images/mobiles/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #2f303a;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(to bottom, rgba(55, 47, 58, 0.4) 0%, rgba(55, 47, 58, 0)),
+      url(../images/mobiles/bg@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to bottom, rgba(55, 47, 58, 0.4) 0%, rgba(55, 47, 58, 0)),
+      url(../images/tablet/bg.tab.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom, rgba(55, 47, 58, 0.4) 0%, rgba(55, 47, 58, 0)),
+        url(../images/tablet/bg.tab@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    background-image: linear-gradient(to bottom, rgba(55, 47, 58, 0.4) 0%, rgba(55, 47, 58, 0)),
+      url(../images/desktop/bg.pc.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom, rgba(55, 47, 58, 0.4) 0%, rgba(55, 47, 58, 0)),
+        url(../images/desktop/bg.pc@2x.jpg);
+    }
+  }
+}
+
+.hero__title {
+  margin: 0 auto 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--main-light-color);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.hero__btn {
+  padding: 10px 24px;
+  border-radius: 4px;
+  border: transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--main-light-color);
+  background-color: var(--current-color);
+
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+  }
+}

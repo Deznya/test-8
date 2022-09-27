@@ -1,2 +1,2 @@
-# test-8
-8 tsk
+# goit-markup-hw-08-deznya
+8 домашка
